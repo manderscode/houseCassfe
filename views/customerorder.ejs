@@ -1,0 +1,66 @@
+<!-- THIS WOULD BE THE MAIN PAGE FOR CUSTOMER ORDERS -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House Cass Cafe</title>
+    <!-- <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <img src="img/menu.jpg" alt="Coffee Menu"> -->
+    <h1>Welcome to House Cass-fe!</h1>
+    <div class="container">
+      <form action="/savedToDatabase" method="POST">
+
+        <select name="coffeeSize" class="coffeeSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+
+        <select name="coffeeIce" class="ice">
+          <option value="Light Ice">Light Ice</option>
+          <option value="Regular Ice">Regular Ice</option>
+          <option value="Extra Ice">Extra Ice</option>
+        </select>
+
+        <select name="coffeeChoice" class="coffeeChoice">
+          <option value="Cappucino">Cappucino</option>
+          <option value="Espresso">Espresso</option>
+          <option value="Flat White">Flat White</option>
+          <option value="Doppio">Doppio</option>
+          <option value="Latte Macchiato">Latte Macchiato</option>
+          <option value="Mocha">Mocha</option>
+          <option value="Glace">Glace</option>
+          <option value="Americano">Americano</option>
+        </select>
+        <input
+          type="text" class="coffeeInstruc"
+          placeholder="Special Instructions"
+          name="coffeeInstructions"
+        />
+        <input
+          type="text" class="name"
+          placeholder="Enter Your Name Here"
+          name="customerName"
+        />
+        <button type="submit">Submit Order</button>
+      </form>
+      <a class="login" href="/login">Barista Account</a>
+    </div>
+  </body>
+</html>

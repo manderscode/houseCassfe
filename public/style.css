@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 20% 0 20%;
+  text-align: center;
+  background-image: url("img/cozy.jpeg");
+  font-family: "Arvo", serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+h1 {
+  color: brown;
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff,
+    inset 4px 4px 8px rgba(209, 217, 230, 0.2),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #e8eff5;
+}
+
+.form-control { 
+  margin-left: 5%;
+}
+form, p { 
+  color: white;
+}
+button {
+  font-family: "Arvo", serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms, background 200ms;
+  :hover {
+    transform: translateY(-2px);
+  }
+}
+
+.login {
+  color: white;
+}
+
+.coffeeSize,
+.ice,
+.coffeeChoice,
+.coffeeInstruc,
+.name,
+.customerName {
+  font-family: "Arvo", serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
+
+  border: 3px solid #000;
+  border-radius: 5px;
+  height: 50px;
+  line-height: normal;
+  color: #282828;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;
+  :focus {
+    border: 3px solid #5551ff;
+  }
+}
